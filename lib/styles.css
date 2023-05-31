@@ -521,22 +521,29 @@ li {
 .redes i{
   font-size: 30px;
   margin: 20px;
-  color: #5c8ac7;
-  transition: all 0.3s ease-in-out;
+  color: #183964;
   width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 .redes a{
-  border: 2px solid #183964;
   margin: 20px;
   padding: 5px;
   border-radius: 50%;
+  outline: 2px solid #183964;
+  transition-property: outline-offset, background-color;
+  transition-duration: 0.20s;
+ 
 }
 .redes a:hover{
+  outline-offset: 4px;
   background-color: #183964;
-  transition: all 0.3s ease-in-out;
+}
+.redes a:hover i{
+  color: #fff;
+  animation: shake 0.35s;
 }
 
 
@@ -551,7 +558,7 @@ section #contato{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: 50px;
   width: 100%;
 }
@@ -631,6 +638,20 @@ section #contato{
   border: 2px solid #183964;
   outline: none;
   transition: all 0.3s ease-in-out;
+}
+@keyframes shake {
+  10%{
+    transform: rotate(15deg);
+  }
+  20%{
+    transform: rotate(-15deg);
+  }
+  30%{
+    transform: rotate(15deg);
+  }
+  40%{
+    transform: rotate(-15deg);
+  }
 }
   
 @media (max-width: 999px) {
