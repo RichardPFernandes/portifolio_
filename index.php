@@ -356,18 +356,18 @@
               <?php isset($_SESSION['msg']) ?  $_SESSION['msg'] : ''; ?>
             </div>
             <div class="redes">
-              <a href="https://github.com/NomadesPrime"
+              <a href="https://github.com/NomadesPrime" class="botao"
                 ><i class="fa fa-github"></i
               ></a>
-              <a href="https://www.linkedin.com/in/richard-fernandes-882b77233/"
+              <a href="https://www.linkedin.com/in/richard-fernandes-882b77233/" class="botao"
                 ><i class="fa fa-linkedin"></i
               ></a>
               <a
                 href="https://www.google.com.br/maps/place/R.+Victor+Konder,+1020+-+Iririú,+Joinville+-+SC,+89227-240/@-26.2778436,-48.8193254,17z/data=!3m1!4b1!4m6!3m5!1s0x94deb1e6feabba91:0x5c0529f34fbe2075!8m2!3d-26.2778436!4d-48.8167451!16s%2Fg%2F11c26hyx5r?entry=ttu"
-              >
+                class="botao">
                 <i class="fa fa-map-marker"></i
               ></a>
-              <a
+              <a class="botao"
                 href="https://api.whatsapp.com/send?phone=5547988035851&text=Ol%C3%A1%20Richard%2C%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
               >
                 <i class="fa fa-whatsapp"></i>

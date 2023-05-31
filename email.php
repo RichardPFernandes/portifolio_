@@ -24,7 +24,8 @@ $mail -> SMTPDebug = 0;
 $mail -> Username = "fernandesrichard312@gmail.com";
 $mail -> Password = "bdhlciyeaukcyzrk";
 
-$mail -> setFrom($email);
+$mail -> setFrom("$email", "$nome");
+$mail -> addReplyTo("$email", "$nome");
 $mail -> addAddress("fernandesrichard312@gmail.com", "Richard Fernandes");
 
 $mail -> isHTML(true);

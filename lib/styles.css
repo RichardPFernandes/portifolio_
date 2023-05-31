@@ -519,16 +519,26 @@ li {
   margin-bottom: 50px;
 }
 .redes i{
-  font-size: 50px;
+  font-size: 30px;
   margin: 20px;
-  color: #183964;
+  color: #5c8ac7;
+  transition: all 0.3s ease-in-out;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redes a{
+  border: 2px solid #183964;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.redes a:hover{
+  background-color: #183964;
   transition: all 0.3s ease-in-out;
 }
-.redes i:hover{
-  color: #5c8ac7;
-  transform: scale(1.2);
-  cursor: pointer;
-}
+
 
 section #contato{
   display: flex;
