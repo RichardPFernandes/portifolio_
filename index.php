@@ -24,7 +24,7 @@
         <nav>
           <a href="#" class="logo"
             ><img
-              src="assets/Logotipo Nome Monograma Minimalista Preto e Branco.png"
+              src="assets/Logotipo_Nome_Monograma_Minimalista_Preto_e_Branco-removebg-preview.png"
           /></a>
           <div class="mobile-menu">
             <div class="linha1"></div>
@@ -336,7 +336,7 @@
         <div class="contato">
           <div class="fundo_te">
             <h1>Contato</h1>
-            <div class="portifolio-line"></div>
+            <div class="portifolio-line contato-line"></div>
             <p>
               Entre em contato comigo para mais informações ou para tirar
               dúvidas.

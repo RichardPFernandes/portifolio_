@@ -4,7 +4,6 @@
 }
 .logo img {
   width: 60%;
-  margin-top: 10%;
 }
 
 .fundo {
@@ -534,7 +533,7 @@ li {
   border-radius: 50%;
   outline: 2px solid #183964;
   transition-property: outline-offset, background-color;
-  transition-duration: 0.20s;
+  transition-duration: 0.25s;
  
 }
 .redes a:hover{
@@ -753,7 +752,7 @@ section #contato{
     margin-top: 60px;
   }
   .formacao {
-    margin-top: 100px;
+    margin-top: 200px;
     font-size: 17px;
   }
 
@@ -790,7 +789,10 @@ section #contato{
     margin-top: 1100px;
   }
   .portifolio {
-    margin-top: 500px;
+    margin-top: 10rem;
+  }
+  #portifolio{
+    margin-top: 20rem;
   }
   .projetos ul{
     display: flex;
@@ -820,4 +822,29 @@ section #contato{
   top: 20%;
 }
 
+.contato-line{
+  width: 100%;
 }
+.contato-form{
+  width: 100%;
+}
+.contato-form input[type="text"]{
+  width: 100%;
+}
+.contato-form input[type="email"]{
+  width: 100%;
+}
+.contato-form textarea{
+  width: 100%;
+}
+.contato-form input[type="submit"]{
+  width: 100%;
+}
+
+.redes a{
+  padding: 1px;
+  margin: 5px;
+}
+
+}
+
