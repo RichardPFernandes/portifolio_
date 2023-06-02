@@ -376,6 +376,11 @@
           </div>
         </div>
       </section>
+      <footer>
+        <div class="footer">
+          <p>Richard Fernandes &copy; 2020</p>
+        </div>
+      </footer>
 
       <div class="line-top"></div>
       <div class="line-bottom"></div>
