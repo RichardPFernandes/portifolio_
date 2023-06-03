@@ -33,7 +33,7 @@ $mail -> Subject = $assunto;
 $mail -> Body = $mensagem;
 
 if($mail -> send()){
-    header("Location: index.php");
+    header("Location: index.html");
     $SESSION['msg'] = "<div class='alert alert-success'>Email enviado com sucesso!</div>";
 }else{
     header("Location: index.html");
