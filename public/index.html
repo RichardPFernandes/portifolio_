@@ -7,7 +7,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <title>Home</title>
+    <title>Richard Fernandes</title>
     <link rel="stylesheet" href="lib/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +17,14 @@
     />
 
     <link href="https://css.gg/css" rel="stylesheet" />
+    <link rel="icon" href="assets/Logotipo Nome Monograma Minimalista Preto e Branco.png">
   </head>
   <body>
     <div class="fundo">
+      <section id="home">
       <header>
         <nav>
-          <a href="#" class="logo"
+          <a href="#home" class="logo"
             ><img
               src="assets/Logotipo_Nome_Monograma_Minimalista_Preto_e_Branco-removebg-preview.png"
           /></a>
@@ -32,12 +34,12 @@
             <div class="linha3"></div>
           </div>
           <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#competencias">Competencias</a></li>
-            <li><a href="#portifolio">Portifolio</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li class="ativo"><a href="#home">Home</a></li>
+            <li class="ativo"><a href="#sobre">Sobre</a></li>
+            <li class="ativo"><a href="#formacao">Formação</a></li>
+            <li class="ativo"><a href="#competencias">Competencias</a></li>
+            <li class="ativo"><a href="#portifolio">Portifolio</a></li>
+            <li class="ativo"><a href="#contato">Contato</a></li>
             <div class="button-fechar">
               <div class="button-line"></div>
               <div class="button-line1"></div>
@@ -52,6 +54,7 @@
       <div class="sub">
         <span>Desenvolvedor Web e Mobile</span>
       </div>
+      </section>
       <section id="sobre">
         <div class="titulo">
           <h1>Sobre</h1>
@@ -482,6 +485,7 @@
           slides2[slideIndex2 - 1].style.display = "block";
         }
       </script>
+      <script src="scripts/scroll.js"></script>
     </div>
   </body>
 </html>

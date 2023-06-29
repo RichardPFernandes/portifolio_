@@ -7,8 +7,17 @@
 }
 
 .fundo {
-  height: 1000vh;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  
 }
+
+
+
 .line-top {
   left: 0;
   top: 0;
@@ -75,14 +84,38 @@ nav {
   padding: 4rem 0rem 0 1rem;
   margin-right: 10px;
   background-color: #fff;
+  z-index: 100;
 }
 ul {
   display: flex;
   list-style: none;
+
+
 }
 li {
   padding: 0 30px;
+  
 }
+.ativo:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #183964;
+  transition: width 0.3s;
+}
+.ativo:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #183964;
+  transition: width 0.3s;
+}
+
+
+
+
 .tittle {
   display: flex;
   justify-content: center;
@@ -129,7 +162,6 @@ li {
 .mobile-menu {
   cursor: pointer;
   display: none;
-  margin-top: 35px;
   margin-right: 50px;
 }
 .logo-mobile {
@@ -505,9 +537,20 @@ li {
     padding: 10px 0;
     align-items: center;
     margin-bottom: 100px;
+
   }
   section #competencias  {
     margin-top: 300px;
+  }
+  .aparecer{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+ .aparecer.aparecer-active{
+    transform: translateY(0px) !important;
+    opacity: 1 !important;
   }
 
 .redes{
@@ -696,7 +739,7 @@ section #contato{
   .navbar li {
     margin-left: 0;
     opacity: 0;
-    margin: 50px;
+    margin: 45px;
   }
   .mobile-menu {
     display: block;
@@ -705,7 +748,7 @@ section #contato{
     transform: translateX(0);
   }
   .sobre-line {
-    margin-left: 42%;
+    margin-left: 40%;
   }
 
   @keyframes navLinkFade {
@@ -724,7 +767,7 @@ section #contato{
   }
 
   .mobile-menu.active .linha1 {
-    transform: rotate(-45deg) translate(-10px, 8px);
+    transform: rotate(-50deg) translate(-10px, 8px);
   }
 
   .mobile-menu.active .linha2 {
@@ -732,7 +775,7 @@ section #contato{
   }
 
   .mobile-menu.active .linha3 {
-    transform: rotate(45deg) translate(-5px, -8px);
+    transform: rotate(50deg) translate(-5px, -8px);
   }
   .foto-perfil {
     display: flex;
@@ -829,7 +872,7 @@ section #contato{
   width: 100%;
 }
 .contato-form input[type="text"]{
-  width: 100%;
+  width: 20rem;
 }
 .contato-form input[type="email"]{
   width: 100%;
@@ -848,3 +891,12 @@ section #contato{
 
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  
+}
